@@ -2,25 +2,77 @@
 
 :root {
     --white: #fff;
+    --black: #000;
+    --offwhite: #f1f1f1;
+    --light-blue: #acd2e6;
 }
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: black;
+    background-color: var(--offwhite);
 }
+
+/* Nav */
+
+nav.navbar {
+    background-color: var(--light-blue);
+}
+
 .logo {
     height: 60px;
 }
 
-.navbar {
-    border: 2px white solid;
-}
-
 .navbar-nav .nav-link {
-    color: var(--white);
+    color: var(--black);
     font-weight: 600;
+    font-size: 18px;
 }
 
 a.active {
-    border-bottom: 1px solid var(--white);
+    border-bottom: 1px solid var(--black);
     font-weight: 800;
+}
+
+/* Hero Section */
+#hero-image {
+    background-image: url(../media/images/dubai-palm.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 50px;
+}
+
+.hero-text-container {
+    color: var(--white);
+    /* From https://css.glass */
+    background: rgba(64, 64, 64, 0.37);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.1px);
+    -webkit-backdrop-filter: blur(10.1px);
+    border: 1px solid rgba(64, 64, 64, 0.5);
+}
+
+.hero-text-container h1 {
+    font-size: 2.5rem;
+}
+
+.hero-text {
+    color: var(--white);
+}
+.btn-hero {
+    background-color: #93d0f6;
+    color: black;
+    text-decoration: none;
+}
+.btn-hero:hover {
+    background-color: #79a4be;
+    color: var(--white);
+}
+.event-section {
+    height: 500px;
 }
