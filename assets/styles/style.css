@@ -14,6 +14,9 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--offwhite);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Nav */
@@ -177,6 +180,43 @@ img {
     background-color: var(--light-blue-2);
     border-radius: 20px;
 }
+
+/* Attractions page */
+
+#hero-image-attractions {
+    background-image: url(../media/images/Dubai-Weather-in-July.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 50px;
+}
+
+.hero-text-attractions {
+    font-size: 1.1rem;
+}
+
+.text-container {
+    border: 1px outset var(--white);
+}
+
+/* Eat and Sleep Page */
+
+#hero-image-hotels {
+    background-image: url(../media/images/dubai-hotels.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 50px;
+}
+
 /* Footer */
 
 #footer {
