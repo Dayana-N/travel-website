@@ -5,7 +5,12 @@
     --black: #000;
     --offwhite: #f1f1f1;
     --light-blue: #acd2e6;
+    --light-blue-2: #c8d8e7;
+    --dark-blue: #37789b;
+    --light-green: #75caa3;
+    --dark-green: #61a787;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--offwhite);
@@ -14,7 +19,7 @@ body {
 /* Nav */
 
 nav.navbar {
-    background-color: var(--light-blue);
+    background-color: var(--light-blue-2);
 }
 
 .logo {
@@ -41,7 +46,7 @@ a.active {
     height: 700px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
     padding: 50px;
 }
@@ -74,6 +79,14 @@ a.active {
     color: var(--white);
 }
 
+.btn-green {
+    background-color: var(--light-green);
+}
+
+.btn-green:hover {
+    background-color: var(--dark-green);
+}
+
 /* Carousel */
 
 .carousel-control-prev-icon,
@@ -81,10 +94,12 @@ a.active {
     background-color: #000;
 }
 
+/* Explore Dubai section */
 .explore-dubai {
+    border-radius: 60px 5px;
     height: fit-content;
-    background-color: var(--light-blue);
-    padding-bottom: 20px;
+    background-color: var(--dark-blue);
+    padding-bottom: 60px;
 }
 
 .title {
@@ -154,4 +169,31 @@ img {
 
 .fadeIn-bottom {
     top: 80%;
+}
+
+/* Dubai pass section */
+
+.book-pass-container {
+    background-color: var(--light-blue-2);
+    border-radius: 20px;
+}
+/* Footer */
+
+#footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    margin-top: auto;
+}
+
+#social-links a {
+    text-decoration: none;
+}
+
+#social-links a i {
+    color: var(--white);
+    font-size: 25px;
+}
+
+.copyright {
+    background-color: var(--dark-blue-background);
 }
