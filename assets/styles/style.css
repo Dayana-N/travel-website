@@ -217,6 +217,45 @@ img {
     padding: 50px;
 }
 
+/* Contact Page */
+.contact-img {
+    background-image: url(../media/images/dubai_beach_the_palm.jpg);
+    width: 100%;
+    min-height: 700px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container {
+    /* height: 300px; */
+    /* From https://css.glass */
+    background: rgb(35 28 28 / 58%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.1px);
+    -webkit-backdrop-filter: blur(10.1px);
+    border: 1px solid rgba(64, 64, 64, 0.5);
+}
+
+#message {
+    height: 150px;
+}
+
+.form-floating label::after {
+    background-color: transparent !important;
+}
+#contactForm input,
+#contactForm textarea {
+    background-color: transparent;
+    color: var(--white);
+}
+#contactForm label {
+    color: var(--white);
+}
 /* Footer */
 
 #footer {
