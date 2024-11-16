@@ -97,6 +97,16 @@ a.active {
     background-color: #000;
 }
 
+/* Cards */
+.card-animation {
+    box-shadow: 4px 4px 7px 2px #00000069;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-animation:hover {
+    transform: scale(1.05);
+    border-color: var(--dark-blue);
+}
 /* Explore Dubai section */
 .explore-dubai {
     border-radius: 60px 5px;
@@ -235,7 +245,7 @@ img {
     /* From https://css.glass */
     background: rgb(35 28 28 / 58%);
     border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 8px 11px 7px rgb(0 0 0 / 27%);
     backdrop-filter: blur(10.1px);
     -webkit-backdrop-filter: blur(10.1px);
     border: 1px solid rgba(64, 64, 64, 0.5);
