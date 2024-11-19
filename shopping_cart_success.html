@@ -53,7 +53,8 @@
             </div>
         </nav>
     </header>
-    <section class="cart-empty my-4">
+
+    <section class="cart my-4">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12">
@@ -64,105 +65,14 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-12 col-lg-7 p-0 ">
                         <div class="custom-border text-center p-3">
-                            <h4>Your Shopping Cart Is Empty</h4>
-                            <p>You can find more information about attraction passes on our home page</p>
+                            <h4>Your Order Was Places Successfully</h4>
+                            <p>You will receive an email shortly.</p>
                             <a href="index.html" class="btn btn-green text-white">Go Home</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="cart my-4">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <h3>Shopping Cart</h3>
-                    <hr>
-                </div>
-
-                <div class="row d-flex justify-content-md-between justify-content-center">
-                    <div class="col-12 col-lg-8 p-0 ">
-                        <div class="custom-border p-3">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Item</th>
-                                        <th scope="col">Total</th>
-                                        <th scope="col"></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">
-                                            <div class="item-description">
-                                                <p>One Day Pass</p>
-                                            </div>
-                                        </th>
-                                        <td>
-                                            <div class="cart-item-price">
-                                                <p>€12.99</p>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <form action="shopping_cart.html">
-                                                <button onclick="deleteItem()" type="submit" aria-label="remove item"><i
-                                                        class="fa-solid fa-trash-can" style="color: #e6402d;"></i></button>
-                                            </form>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="card-pay">
-        <div class="container">
-            <div class="row">
-                <div class="col-10">
-                    <h5>Your Details:</h5>
-                    <hr>
-                    <div class="row">
-                        <div class="col-10">
-                            <form action="shopping_cart_success.html" class="form p-4" id="payForm">
-
-                                <div class="form-floating mb-3">
-                                    <input type="text" name="firstName" id="firstName" class="form-control" placeholder="Name" required>
-                                    <label for="firstName">Name*</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="Email" required>
-                                    <label for="email">Email*</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="tel" name="firstName" id="cardNumber" class="form-control" inputmode="numeric"
-                                        pattern="[0-9\s]{15,19}" maxlength="19" placeholder="Card Number" required
-                                        title="Please Enter Valid Card Number">
-                                    <label for="firstName">Card Number*</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="text" name="expiry" id="expiry" class="form-control" placeholder="MM/YY"
-                                        pattern="^(0[1-9]|1[0-2])/?\d{2}$" maxlength="5" required>
-                                    <label for="expiry">MM/YY*</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="text" name="cvv" id="cvv" class="form-control" maxlength="3" pattern="^\d{3,4}$"
-                                        placeholder="CVV" required>
-                                    <label for="cvv">CVV*</label>
-                                </div>
-                                <button class="btn btn-green" onclick="deleteItem()" type="submit">Submit</button>
-                            </form>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
     </section>
 
     <!-- Footer -->

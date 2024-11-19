@@ -40,6 +40,16 @@ a.active {
     font-weight: 800;
 }
 
+/* Alert */
+#alert {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 9999;
+    border-radius: 0px;
+}
+
 /* Hero Section */
 #hero-image {
     background-image: url(../media/images/dubai-palm.webp);
@@ -280,6 +290,10 @@ img {
 .table > :not(caption) > * > * {
     background-color: transparent;
     border-bottom-color: var(--dark-gray);
+}
+
+.hide {
+    display: none;
 }
 
 /* Footer */
