@@ -296,6 +296,13 @@ img {
     display: none;
 }
 
+/* 404 Page */
+#error-page {
+    height: 400px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
 /* Footer */
 
 #footer {
