@@ -18,7 +18,6 @@
     <meta name="twitter:title" content="Discover Dubai: Attractions, Events, Hotels & Restaurants">
     <meta name="twitter:description" content="From stunning attractions to luxury stays, explore Dubai with our ultimate travel guide.">
     <meta name="twitter:image" content="./assets/media/images/dubai-palm.webp">
-    <meta name="author" content="Experience Dubai">
     <meta name="robots" content="index, follow">
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/media/images/favicon/apple-touch-icon.png">
@@ -75,8 +74,8 @@
                         <div class="row">
                             <h1 class="text-center text-white">Contact Us</h1>
                             <hr class="text-white">
-                            <div class="col-12 col-lg-6">
-                                <form action="#" class="form p-4" id="contactForm">
+                            <div class="col-12 col-lg-6  d-flex justify-content-center align-items-center" id="contact-form-container">
+                                <form class="form p-4" id="contactForm">
                                     <div class="form-floating mb-3">
                                         <input type="text" name="firstName" id="firstName" class="form-control" placeholder="Name" required>
                                         <label for="firstName">Name*</label>
@@ -86,11 +85,15 @@
                                         <label for="email">Email*</label>
                                     </div>
                                     <div class="form-floating mb-3">
-                                        <textarea name="message" id="message" class="form-control" placeholder="Enter Message"></textarea>
-                                        <label for="message">Enter Message</label>
+                                        <textarea name="message" id="message" class="form-control" placeholder="Enter Message"
+                                            required></textarea>
+                                        <label for="message">Enter Message*</label>
                                     </div>
-                                    <button class="btn btn-green" type="submit">Submit</button>
+                                    <button class="btn btn-green" id="contact-form-submit" type="submit">Submit</button>
                                 </form>
+                                <div class="form-submitted hide">
+                                    <h4 class="text-white text-center"><u>Form Submitted Successfully!</u></h4>
+                                </div>
                             </div>
                             <div class="col-12 col-lg-6">
                                 <h4 class="text-white">Contact Details:</h4>
@@ -158,6 +161,8 @@
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <!-- JS file -->
+    <script src="./assets/scripts/contact.js"></script>
 </body>
 
 </html>

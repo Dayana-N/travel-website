@@ -265,6 +265,10 @@ img {
     height: 150px;
 }
 
+#contact-form-container {
+    height: 400px;
+}
+
 .form-floating label::after {
     background-color: transparent !important;
 }
