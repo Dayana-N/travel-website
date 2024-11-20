@@ -1,4 +1,4 @@
-const submitBtn = document.getElementById('contact-form-submit');
+const contactFormContainer = document.getElementById('contact-form-container');
 const contactForm = document.getElementById('contactForm');
 const formSuccessMessage = document.getElementsByClassName('form-submitted')[0];
 function submitContactForm() {
@@ -6,6 +6,7 @@ function submitContactForm() {
         e.preventDefault();
         contactForm.classList.add('hide');
         formSuccessMessage.classList.remove('hide');
+        contactFormContainer.classList.add('contact-form-container');
     });
 }
 

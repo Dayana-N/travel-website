@@ -265,9 +265,15 @@ img {
     height: 150px;
 }
 
-#contact-form-container {
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 400px;
 }
+/* #contact-form-container {
+    height: 400px;
+} */
 
 .form-floating label::after {
     background-color: transparent !important;
